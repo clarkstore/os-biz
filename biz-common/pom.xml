@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    <modelVersion>4.0.0</modelVersion>
+    <parent>
+        <groupId>com.onestop</groupId>
+        <artifactId>os-biz</artifactId>
+        <version>1.0.0</version>
+    </parent>
+
+    <artifactId>biz-common</artifactId>
+    <packaging>jar</packaging>
+
+    <description>公共模块</description>
+
+    <dependencies>
+        <!--公共模块-->
+        <dependency>
+            <groupId>com.github.clarkstore</groupId>
+            <artifactId>os-core-spring-boot-starter</artifactId>
+            <version>${onestop.version}</version>
+        </dependency>
+        <!--alibaba连接池-->
+        <dependency>
+            <groupId>com.alibaba</groupId>
+            <artifactId>druid-spring-boot-starter</artifactId>
+        </dependency>
+        <!--alibaba连接池-->
+        <!-- mybatis-plus begin -->
+        <dependency>
+            <groupId>com.baomidou</groupId>
+            <artifactId>mybatis-plus-boot-starter</artifactId>
+        </dependency>
+        <dependency>
+            <groupId>mysql</groupId>
+            <artifactId>mysql-connector-java</artifactId>
+        </dependency>
+    </dependencies>
+</project>

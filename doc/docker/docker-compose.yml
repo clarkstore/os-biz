@@ -1,0 +1,13 @@
+version: '2'
+services:
+  os-wxmp:
+    build:
+      context: ./
+      dockerfile: Dockerfile-wxmp
+    restart: always
+    image: os-wxmp
+    container_name: os-wxmp
+    ports:
+    - 9931:9931
+    volumes:
+    - /home/csl/logs/wxmp/:/home/csl/logs/wxmp/

@@ -1,0 +1,57 @@
+server:
+  port: 80
+
+logging:
+  level:
+    org.springframework: info
+    cn.binarywang: info
+    com.onestop: debug
+# 数据源
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url:
+    username:
+    password:
+
+mybatis-plus:
+  #  typeAliasesPackage: com.onestop.**.model.entity
+  #  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    #驼峰下划线转换
+    map-underscore-to-camel-case: true
+  global-config:
+    db-config:
+      #逻辑删除配置（下面3个配置）
+      logic-delete-field: deleted
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+      #表名、是否使用下划线命名，默认数据库表使用下划线命名
+      table-underline: true
+
+os:
+  wxmini:
+    # 开启小程序配置
+    enabled: true
+    #小程序
+    appid:  #微信小程序的appid
+    secret:  #微信小程序的Secret
+    token:  #默认值
+    aesKey:  #默认值
+    msgDataFormat: JSON #默认JSON
+    #上传路径
+    uploadPath: e:/ #/home/csl/wxmini/upload/
+    #订阅消息模板
+    subscribe:
+      # 开启订阅消息配置
+      enabled: true
+
+  azure:
+    storage:
+      # 开启
+      enabled: true
+      # 连接字符串
+      connectionString:
+  token:
+    # 开启
+    enabled: true

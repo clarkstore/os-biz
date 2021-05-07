@@ -1,0 +1,23 @@
+server:
+  port: 80
+
+logging:
+  level:
+    org.springframework: INFO
+    me.chanjar.weixin: INFO
+    com.onestop: DEBUG
+
+os:
+  wxmp:
+    # 开启配置
+    enabled: true
+    appid:  #微信appid
+    secret:  #微信Secret
+    token:  #默认值
+    aesKey:  #默认值
+    uiPath: http://wxmini2.ithelpdesk.cn/wxmpui/
+#    menu:
+#      enabled: true
+    # 开启关键字回复配置
+    reply:
+      enabled: true
