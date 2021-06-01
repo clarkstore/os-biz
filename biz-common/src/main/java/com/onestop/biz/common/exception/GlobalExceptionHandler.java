@@ -1,6 +1,6 @@
 package com.onestop.biz.common.exception;
 
-import com.onestop.common.core.exception.BizException;
+import com.onestop.common.core.exception.OsBizException;
 import com.onestop.common.core.util.Res;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.ExceptionHandler;
@@ -20,8 +20,8 @@ public class GlobalExceptionHandler {
      * @param e Biz Error
      * @return Res 返回结果
      */
-    @ExceptionHandler(value = {BizException.class})
-    public Res bizExceptionHandle(BizException e) {
+    @ExceptionHandler(value = {OsBizException.class})
+    public Res bizExceptionHandle(OsBizException e) {
         log.error("=========GlobalExceptionHandler=========");
         log.error(e.getMsg());
         return Res.failed(e.getMsg());

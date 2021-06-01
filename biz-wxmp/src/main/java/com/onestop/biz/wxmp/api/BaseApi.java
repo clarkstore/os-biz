@@ -1,6 +1,5 @@
 package com.onestop.biz.wxmp.api;
 
-import com.onestop.biz.wxmp.service.OuterService;
 import com.onestop.wx.mp.util.OsWxMpUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 
@@ -13,6 +12,4 @@ import org.springframework.beans.factory.annotation.Autowired;
 public abstract class BaseApi {
     @Autowired
     protected OsWxMpUtils osWxMpUtils;
-    @Autowired
-    protected OuterService outerService;
 }

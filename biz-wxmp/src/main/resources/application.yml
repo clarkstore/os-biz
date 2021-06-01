@@ -15,9 +15,9 @@ os:
     secret:  #微信Secret
     token:  #默认值
     aesKey:  #默认值
-    uiPath: http://wxmini2.ithelpdesk.cn/wxmpui/
-#    menu:
-#      enabled: true
+    uiPath:
+    menu:
+      enabled: true
     # 开启关键字回复配置
     reply:
       enabled: true

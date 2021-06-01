@@ -1,7 +1,6 @@
 package com.onestop.biz.wxmp.api;
 
 import cn.hutool.core.util.StrUtil;
-import com.onestop.biz.wxmp.model.dto.UserDto;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;
@@ -42,8 +41,6 @@ public class GotoApi extends BaseApi {
     @GetMapping("getAccessToken")
     public String getAccessToken(String code, String state) {
         String openid = super.osWxMpUtils.getOpenid(code);
-        UserDto dto = super.outerService.getUserInfo(openid);
-        int isRegister = dto == null ? 0 : 1;
 
         String bizPath = "";
         switch (state) {
@@ -59,7 +56,7 @@ public class GotoApi extends BaseApi {
 
         StringBuilder builder = new StringBuilder("redirect:")
                 .append(this.uiPath)
-                .append(StrUtil.format(bizPath, openid, isRegister));
+                .append(StrUtil.format(bizPath, openid));
         return builder.toString();
     }
 }

@@ -21,20 +21,16 @@
             <artifactId>os-core-spring-boot-starter</artifactId>
             <version>${onestop.version}</version>
         </dependency>
+        <!--公共模块-->
+        <dependency>
+            <groupId>com.github.clarkstore</groupId>
+            <artifactId>os-mybatis-spring-boot-starter</artifactId>
+            <version>${onestop.version}</version>
+        </dependency>
         <!--alibaba连接池-->
         <dependency>
             <groupId>com.alibaba</groupId>
             <artifactId>druid-spring-boot-starter</artifactId>
-        </dependency>
-        <!--alibaba连接池-->
-        <!-- mybatis-plus begin -->
-        <dependency>
-            <groupId>com.baomidou</groupId>
-            <artifactId>mybatis-plus-boot-starter</artifactId>
-        </dependency>
-        <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
         </dependency>
     </dependencies>
 </project>

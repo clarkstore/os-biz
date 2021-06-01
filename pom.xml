@@ -10,17 +10,12 @@
     <version>1.0.0</version>
 
     <properties>
-        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <java.version>8</java.version>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <spring-boot.version>2.5.0</spring-boot.version>
+        <!--统一配置bom-->
+        <onestop.version>0.3.15</onestop.version>
         <maven-compiler.version>3.8.1</maven-compiler.version>
-        <onestop.version>0.2.15</onestop.version>
-        <spring-boot.version>2.4.4</spring-boot.version>
-        <hutool.version>5.6.1</hutool.version>
-        <druid.version>1.2.5</druid.version>
-        <mysql-connector-java.version>8.0.23</mysql-connector-java.version>
-        <mybatis-plus.version>3.4.2</mybatis-plus.version>
-        <java-jwt.version>3.12.0</java-jwt.version>
-        <velocity.version>2.2</velocity.version>
     </properties>
 
     <dependencies>
@@ -28,13 +23,11 @@
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-web</artifactId>
-            <version>${spring-boot.version}</version>
         </dependency>
         <!-- 引入Actuator监控依赖 -->
         <dependency>
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-actuator</artifactId>
-            <version>${spring-boot.version}</version>
         </dependency>
         <!--添加lombok-->
         <dependency>
@@ -46,7 +39,6 @@
         <dependency>
             <groupId>cn.hutool</groupId>
             <artifactId>hutool-all</artifactId>
-            <version>${hutool.version}</version>
         </dependency>
         <!--测试 SpringBoot2.4.0使用JUnit5-->
         <dependency>
@@ -71,40 +63,18 @@
     <dependencyManagement>
         <dependencies>
             <dependency>
+                <groupId>com.github.clarkstore</groupId>
+                <artifactId>os-common-bom</artifactId>
+                <version>${onestop.version}</version>
+                <type>pom</type>
+                <scope>import</scope>
+            </dependency>
+            <dependency>
                 <groupId>org.springframework.boot</groupId>
                 <artifactId>spring-boot-dependencies</artifactId>
                 <version>${spring-boot.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
-            </dependency>
-            <!--alibaba连接池-->
-            <dependency>
-                <groupId>com.alibaba</groupId>
-                <artifactId>druid-spring-boot-starter</artifactId>
-                <version>${druid.version}</version>
-            </dependency>
-            <!--alibaba连接池-->
-
-            <!-- mybatis-plus begin -->
-            <dependency>
-                <groupId>com.baomidou</groupId>
-                <artifactId>mybatis-plus-boot-starter</artifactId>
-                <version>${mybatis-plus.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>com.baomidou</groupId>
-                <artifactId>mybatis-plus-generator</artifactId>
-                <version>${mybatis-plus.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>org.apache.velocity</groupId>
-                <artifactId>velocity-engine-core</artifactId>
-                <version>${velocity.version}</version>
-            </dependency>
-            <dependency>
-                <groupId>mysql</groupId>
-                <artifactId>mysql-connector-java</artifactId>
-                <version>${mysql-connector-java.version}</version>
             </dependency>
         </dependencies>
     </dependencyManagement>

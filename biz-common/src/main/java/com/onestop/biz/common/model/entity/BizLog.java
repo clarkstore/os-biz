@@ -3,8 +3,7 @@ package com.onestop.biz.common.model.entity;
 import com.baomidou.mybatisplus.annotation.*;
 import com.baomidou.mybatisplus.extension.activerecord.Model;
 import com.onestop.biz.common.constant.BizConsts;
-import lombok.Builder;
-import lombok.Data;
+import lombok.*;
 import lombok.experimental.Tolerate;
 
 import java.io.Serializable;
@@ -17,7 +16,9 @@ import java.time.LocalDateTime;
  * @version 2020/09/15
  */
 @Builder
-@Data
+@Getter
+@Setter
+@ToString
 //@TableName("biz_log")
 public class BizLog extends Model<BizLog> {
     @Tolerate
@@ -76,7 +77,7 @@ public class BizLog extends Model<BizLog> {
      * 主键值
      */
     @Override
-    protected Serializable pkVal() {
+    public Serializable pkVal() {
         return this.id;
     }
 }
