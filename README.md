@@ -30,9 +30,9 @@ GitHub：[https://github.com/clarkstore/os-parent](https://github.com/clarkstore
 遵循 [Apache 2.0 协议](https://www.apache.org/licenses/LICENSE-2.0.html) ，
 允许商业使用，但务必保留类作者、Copyright 信息。
 
-![apache](https://gitee.com/clarkstore/os-biz/blob/master/apache.png)
+![apache](https://github.com/clarkstore/os-biz/blob/master/apache.png)
 
 ---
 ### 赞助商
-[![JetBrains IDEA](https://gitee.com/clarkstore/os-parent/blob/master/jetbrains.png)](https://jb.gg/OpenSource)
+[![JetBrains IDEA](https://github.com/clarkstore/os-parent/blob/master/jetbrains.png)](https://jb.gg/OpenSource)
 [感谢JetBrains IDEA对开源项目的支持](https://jb.gg/OpenSource)
