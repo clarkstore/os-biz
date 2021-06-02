@@ -4,7 +4,7 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.onestop</groupId>
+    <groupId>com.onestop.biz</groupId>
     <artifactId>os-biz</artifactId>
     <packaging>pom</packaging>
     <version>1.0.0</version>
@@ -56,6 +56,8 @@
 
     <modules>
         <module>biz-common</module>
+        <module>biz-mq-consumer</module>
+        <module>biz-mq-producer</module>
         <module>biz-wxmini</module>
         <module>biz-wxmp</module>
     </modules>

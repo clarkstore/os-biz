@@ -1,0 +1,54 @@
+server:
+  port: 80
+
+logging:
+  level:
+    org.springframework: info
+    com.onestop: debug
+# 数据源
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://mysql8.mysql.database.chinacloudapi.cn/bdticket?useSSL=false&useUnicode=true&characterEncoding=utf-8&requireSSL=false
+    username: osroot@mysql8
+    password: '1qaz@WSX3edc'
+  # mq
+  rabbitmq:
+    host: 39.105.9.40
+    port: 21901
+    username: clark
+    password: clark
+    connection-timeout: 10000
+    # ----------------生产者端配置----------------
+    publisher-confirm-type: correlated
+    publisher-returns: true
+    template:
+      # 重试次数
+      retry:
+        enabled: true
+        max-attempts: 3
+        # 间隔一秒
+        initial-interval: 1000
+
+  redis:
+    redisson:
+      file: classpath:redisson.yml
+os:
+  redis:
+    # 开启redis工具类
+    enabled: true
+
+mybatis-plus:
+#  typeAliasesPackage: com.onestop.**.model.entity
+#  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    #驼峰下划线转换
+    map-underscore-to-camel-case: true
+  global-config:
+    db-config:
+      #逻辑删除配置（下面3个配置）
+      logic-delete-field: deleted
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+      #表名、是否使用下划线命名，默认数据库表使用下划线命名
+      table-underline: true

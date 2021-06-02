@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.ExceptionHandler;
 @Slf4j
 //@RestControllerAdvice
 //@Order(Ordered.HIGHEST_PRECEDENCE)
-public class GlobalExceptionHandler {
+public class MyGlobalExceptionHandler {
     /**
      *
      * @param e Biz Error

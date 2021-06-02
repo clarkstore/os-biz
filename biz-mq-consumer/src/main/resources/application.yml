@@ -1,0 +1,48 @@
+server:
+  port: 9001
+
+logging:
+  level:
+    org.springframework: info
+    com.onestop: debug
+# 数据源
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://mysql8.mysql.database.chinacloudapi.cn/bdticket?useSSL=false&useUnicode=true&characterEncoding=utf-8&requireSSL=false
+    username: osroot@mysql8
+    password: '1qaz@WSX3edc'
+  # mq
+  rabbitmq:
+    host: 39.105.9.40
+    port: 21901
+    username: clark
+    password: clark
+    # ----------------消费者端配置----------------
+    listener:
+      simple:
+        # 消费者端手动确认机制
+        acknowledge-mode: manual
+        # 消费者数量
+        concurrency: 10
+        # 最大消费者数量
+        max-concurrency: 10
+        # 消费者每次从队列中获取消息的数量
+        prefetch: 1
+        #消费失败，自动重新入队
+        default-requeue-rejected: true
+
+mybatis-plus:
+  #  typeAliasesPackage: com.onestop.**.model.entity
+  #  mapper-locations: classpath:mapper/*.xml
+  configuration:
+    #驼峰下划线转换
+    map-underscore-to-camel-case: true
+  global-config:
+    db-config:
+      #逻辑删除配置（下面3个配置）
+      logic-delete-field: deleted
+      logic-delete-value: 1
+      logic-not-delete-value: 0
+      #表名、是否使用下划线命名，默认数据库表使用下划线命名
+      table-underline: true
