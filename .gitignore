@@ -62,4 +62,4 @@ gen_code
 node_modules
 
 ### codegen ###
-/wx-codegen/src/main/java/com/cloud/wx/cp/biz/*
+/codegen/src/main/java/com/onestop/biz/*

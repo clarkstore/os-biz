@@ -60,6 +60,7 @@
         <module>biz-mq-producer</module>
         <module>biz-wxmini</module>
         <module>biz-wxmp</module>
+        <module>codegen</module>
     </modules>
 
     <dependencyManagement>
