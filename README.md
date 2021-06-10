@@ -25,6 +25,16 @@ Gitee：[https://gitee.com/clarkstore/os-parent](https://gitee.com/clarkstore/os
 
 GitHub：[https://github.com/clarkstore/os-parent](https://github.com/clarkstore/os-parent)
 
+#### Os-Biz基础平台地址：
+Gitee：[https://gitee.com/clarkstore/os-biz](https://gitee.com/clarkstore/os-biz)
+
+GitHub：[https://gitee.com/clarkstore/os-biz](https://gitee.com/clarkstore/os-biz)
+
+#### Os-Nacos微服务平台地址：
+Gitee：[https://gitee.com/clarkstore/os-nacos](https://gitee.com/clarkstore/os-nacos)
+
+GitHub：[https://gitee.com/clarkstore/os-nacos](https://gitee.com/clarkstore/os-nacos)
+
 ---
 ### 开源协议
 遵循 [Apache 2.0 协议](https://www.apache.org/licenses/LICENSE-2.0.html) ，

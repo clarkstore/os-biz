@@ -67,8 +67,6 @@
         <module>biz-wxmini</module>
         <module>biz-wxmp</module>
         <module>codegen</module>
-        <module>nacos-console</module>
-        <module>nacos-discovery</module>
     </modules>
 
     <dependencyManagement>
