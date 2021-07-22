@@ -21,6 +21,6 @@ public class OsMailUtilsTest {
     public void sendMail() {
         Map<String, Object> map = CollUtil.newHashMap();
         map.put("content", "你好，这封是测试邮件");
-        this.osMailUtils.sendMail("changch@neusoft.com", "E999", map);
+        this.osMailUtils.sendMail("收件人地址", "E999", map);
     }
 }
