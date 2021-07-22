@@ -1,6 +1,6 @@
 package com.onestop.common.core.util;
 
-import cn.hutool.core.collection.CollUtil;
+import cn.hutool.core.map.MapUtil;
 import com.onestop.biz.common.BizCommonApplication;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -19,7 +19,7 @@ public class OsMailUtilsTest {
 
     @Test
     public void sendMail() {
-        Map<String, Object> map = CollUtil.newHashMap();
+        Map<String, Object> map = MapUtil.newHashMap();
         map.put("content", "你好，这封是测试邮件");
         this.osMailUtils.sendMail("收件人地址", "E999", map);
     }

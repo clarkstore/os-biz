@@ -1,7 +1,7 @@
 package com.onestop.biz.common.util;
 
-import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.date.DateUtil;
+import cn.hutool.core.map.MapUtil;
 import cn.hutool.core.util.IdUtil;
 import org.springframework.stereotype.Component;
 
@@ -13,7 +13,7 @@ import java.util.Map;
  */
 @Component
 public class CommonUtils {
-    private Map<String, Integer> map = CollUtil.newHashMap();
+    private Map<String, Integer> map = MapUtil.newHashMap();
 
     /**
      * 生成Id

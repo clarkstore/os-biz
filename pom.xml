@@ -12,15 +12,10 @@
     <properties>
         <java.version>8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <spring-boot.version>2.5.0</spring-boot.version>
-
-        <spring-cloud.version>2020.0.3</spring-cloud.version>
-        <spring-cloud-alibaba.version>2021.1</spring-cloud-alibaba.version>
-        <nacos.version>2.0.0.RELEASE</nacos.version>
-        <nacos-client.version>2.0.0</nacos-client.version>
+        <spring-boot.version>2.5.2</spring-boot.version>
 
         <!--统一配置bom-->
-        <onestop.version>0.3.21</onestop.version>
+        <onestop.version>0.4.1</onestop.version>
         <maven-compiler.version>3.8.1</maven-compiler.version>
     </properties>
 
@@ -75,28 +70,6 @@
                 <groupId>com.github.clarkstore</groupId>
                 <artifactId>os-common-bom</artifactId>
                 <version>${onestop.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.boot</groupId>
-                <artifactId>spring-boot-dependencies</artifactId>
-                <version>${spring-boot.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-            <dependency>
-                <groupId>org.springframework.cloud</groupId>
-                <artifactId>spring-cloud-dependencies</artifactId>
-                <version>${spring-cloud.version}</version>
-                <type>pom</type>
-                <scope>import</scope>
-            </dependency>
-            <!-- spring cloud alibaba 依赖 -->
-            <dependency>
-                <groupId>com.alibaba.cloud</groupId>
-                <artifactId>spring-cloud-alibaba-dependencies</artifactId>
-                <version>${spring-cloud-alibaba.version}</version>
                 <type>pom</type>
                 <scope>import</scope>
             </dependency>

@@ -1,6 +1,6 @@
 package com.onestop.biz.common.interceptor;
 
-import com.onestop.common.core.interceptor.OsTokenInterceptor;
+import com.onestop.common.web.interceptor.OsTokenInterceptor;
 import lombok.extern.slf4j.Slf4j;
 
 import javax.servlet.http.HttpServletRequest;
@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServletResponse;
  * 自定义Token拦截器
  * 重写时追加自定义token逻辑
  * @author Clark
- * @version 2021-04-06
+ * @version 2021-07-22
  */
 @Slf4j
 //@Configuration

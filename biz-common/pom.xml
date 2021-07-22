@@ -21,7 +21,13 @@
             <artifactId>os-core-spring-boot-starter</artifactId>
             <version>${onestop.version}</version>
         </dependency>
-        <!--公共模块-->
+        <!--web模块-->
+        <dependency>
+            <groupId>com.github.clarkstore</groupId>
+            <artifactId>os-web-spring-boot-starter</artifactId>
+            <version>${onestop.version}</version>
+        </dependency>
+        <!--mybatis模块-->
         <dependency>
             <groupId>com.github.clarkstore</groupId>
             <artifactId>os-mybatis-spring-boot-starter</artifactId>
