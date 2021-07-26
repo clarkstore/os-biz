@@ -2,16 +2,16 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0"
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
-    <modelVersion>4.0.0</modelVersion>
     <parent>
-        <groupId>com.onestop.biz</groupId>
         <artifactId>os-biz</artifactId>
+        <groupId>com.onestop.biz</groupId>
         <version>1.0.0</version>
     </parent>
+    <modelVersion>4.0.0</modelVersion>
 
-    <artifactId>biz-wxmini</artifactId>
+    <artifactId>biz-task</artifactId>
     <packaging>jar</packaging>
-    <description>微信小程序业务后台</description>
+    <description>定时任务模块</description>
 
     <dependencies>
         <!--业务公共模块-->
@@ -20,16 +20,10 @@
             <artifactId>biz-common</artifactId>
             <version>${project.version}</version>
         </dependency>
-        <!--微信小程序-->
+        <!--定时任务-->
         <dependency>
             <groupId>com.github.clarkstore</groupId>
-            <artifactId>os-wxmini-spring-boot-starter</artifactId>
-            <version>${onestop.version}</version>
-        </dependency>
-        <!--Azure storage-->
-        <dependency>
-            <groupId>com.github.clarkstore</groupId>
-            <artifactId>os-azure-spring-boot-starter</artifactId>
+            <artifactId>os-task-spring-boot-starter</artifactId>
             <version>${onestop.version}</version>
         </dependency>
     </dependencies>

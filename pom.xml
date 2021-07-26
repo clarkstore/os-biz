@@ -62,6 +62,7 @@
         <module>biz-wxmini</module>
         <module>biz-wxmp</module>
         <module>codegen</module>
+        <module>biz-task</module>
     </modules>
 
     <dependencyManagement>
