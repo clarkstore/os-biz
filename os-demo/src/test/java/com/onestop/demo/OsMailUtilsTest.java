@@ -1,7 +1,7 @@
-package com.onestop.common.core.util;
+package com.onestop.demo;
 
 import cn.hutool.core.map.MapUtil;
-import com.onestop.biz.common.BizCommonApplication;
+import com.onestop.common.core.util.OsMailUtils;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
@@ -12,7 +12,7 @@ import java.util.Map;
  * @author Clark
  * @version 2021/7/22
  */
-@SpringBootTest(classes = BizCommonApplication.class)
+@SpringBootTest(classes = OsDemoApplication.class)
 public class OsMailUtilsTest {
     @Autowired
     private OsMailUtils osMailUtils;
