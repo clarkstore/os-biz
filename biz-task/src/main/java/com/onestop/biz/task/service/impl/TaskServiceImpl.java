@@ -18,7 +18,7 @@
 
 package com.onestop.biz.task.service.impl;
 
-import com.onestop.common.task.service.IOsTaskService;
+import com.onestop.biz.task.service.ITaskService;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.stereotype.Service;
 
@@ -30,7 +30,7 @@ import org.springframework.stereotype.Service;
  */
 @Slf4j
 @Service
-public class TaskServiceImpl implements IOsTaskService {
+public class TaskServiceImpl implements ITaskService {
     @Override
     public String getTaskNo() {
         return "ostask1";
