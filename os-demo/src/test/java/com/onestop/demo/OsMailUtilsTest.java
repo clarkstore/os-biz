@@ -15,12 +15,12 @@ import java.util.Map;
 @SpringBootTest(classes = OsDemoApplication.class)
 public class OsMailUtilsTest {
     @Autowired
-    private OsMailUtils osMailUtils;
+    private OsMailUtils utils;
 
     @Test
     public void sendMail() {
         Map<String, Object> map = MapUtil.newHashMap();
         map.put("content", "你好，这封是测试邮件");
-        this.osMailUtils.sendMail("收件人地址", "E999", map);
+        this.utils.sendMail("收件人地址", "E999", map);
     }
 }

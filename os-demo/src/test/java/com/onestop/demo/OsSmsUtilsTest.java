@@ -13,7 +13,7 @@ import org.springframework.boot.test.context.SpringBootTest;
 @SpringBootTest(classes = OsDemoApplication.class)
 public class OsSmsUtilsTest {
     @Autowired
-    private OsSmsUtils osSmsUtils;
+    private OsSmsUtils utils;
 
     @Test
     public void sendSms() {
@@ -22,6 +22,6 @@ public class OsSmsUtilsTest {
         smsRequest.setSignName("Blooming网");
         smsRequest.setTemplateCode("SMS_204240296");
         smsRequest.setTemplateParam("{\"code\":\"4321\"}");
-        osSmsUtils.sendSms(smsRequest);
+        utils.sendSms(smsRequest);
     }
 }

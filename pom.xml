@@ -12,10 +12,10 @@
     <properties>
         <java.version>8</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <spring-boot.version>2.5.2</spring-boot.version>
+        <spring-boot.version>2.5.4</spring-boot.version>
 
         <!--统一配置bom-->
-        <onestop.version>0.4.11</onestop.version>
+        <onestop.version>0.4.13</onestop.version>
         <maven-compiler.version>3.8.1</maven-compiler.version>
     </properties>
 

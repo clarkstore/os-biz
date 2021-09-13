@@ -15,17 +15,17 @@ import java.io.FileInputStream;
 @SpringBootTest(classes = OsDemoApplication.class)
 public class OsOssUtilsTest {
     @Autowired
-    private OsOssUtils osOssUtils;
+    private OsOssUtils utils;
 
     @Test
     public void test() {
         File file = new File("d:\\123.txt");
 
         try {
-            osOssUtils.upload("abc/1.txt", new FileInputStream(file));
-            osOssUtils.download("abc/1.txt", "d:\\1.txt");
-            osOssUtils.deleteObject("abc");
-            osOssUtils.deleteObjectList("abc");
+            utils.upload("abc/1.txt", new FileInputStream(file));
+            utils.download("abc/1.txt", "d:\\1.txt");
+            utils.deleteObject("abc");
+            utils.deleteObjectList("abc");
         } catch (Exception e) {
             e.printStackTrace();
         }
