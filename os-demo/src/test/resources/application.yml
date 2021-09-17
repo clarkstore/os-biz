@@ -3,6 +3,24 @@ logging:
     org.springframework: INFO
     org.thymeleaf: INFO
     com.onestop: DEBUG
+# 采用默认值配置，下列不必设置
+mybatis-plus:
+  #    typeAliasesPackage: com.onestop.**.model.entity
+#  #默认值：classpath*:/mapper/**/*.xml
+#  mapper-locations: classpath*:/mapper/**/*.xml
+#  configuration:
+#    #驼峰下划线转换：默认值：true
+#    map-underscore-to-camel-case: true
+  global-config:
+    db-config:
+      #逻辑删除配置（下面3个配置）
+      logic-delete-field: deleted
+#      #逻辑删除：正常默认值：0，删除默认值：1
+#      logic-delete-value: 1
+#      logic-not-delete-value: 0
+#      #表名是否使用下划线命名，默认数据库表使用下划线命名:true
+#      table-underline: true
+
 os:
   aes:
     # 开启AES加解密工具类
@@ -29,13 +47,13 @@ os:
     # 开启oss工具类
     enabled: true
     # AccessKey ID
-    accessKeyId: LTAI5tF5Cp6aS7MRYQg5SYQF
+    accessKeyId: xxx
     # AccessKey Secret
-    accessKeySecret: 93JNgJkPOnvUp20KaMb1uunl74XvLu
+    accessKeySecret: xxx
     # endpoint
     endpoint: oss-cn-beijing.aliyuncs.com
     # bucketName
-    bucketName: onduty-dev
+    bucketName: xxx
   sms:
     # 开启邮件工具类
     enabled: true
