@@ -35,7 +35,7 @@
     <dependencies>
         <!--业务公共模块-->
         <dependency>
-            <groupId>com.onestop.biz</groupId>
+            <groupId>${project.groupId}</groupId>
             <artifactId>biz-common</artifactId>
             <version>${project.version}</version>
         </dependency>
