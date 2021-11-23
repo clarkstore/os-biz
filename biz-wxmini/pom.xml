@@ -26,12 +26,6 @@
             <artifactId>os-wxmini-spring-boot-starter</artifactId>
             <version>${onestop.version}</version>
         </dependency>
-        <!--Azure storage-->
-        <dependency>
-            <groupId>com.github.clarkstore</groupId>
-            <artifactId>os-azure-spring-boot-starter</artifactId>
-            <version>${onestop.version}</version>
-        </dependency>
     </dependencies>
     <build>
         <plugins>

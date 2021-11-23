@@ -16,7 +16,7 @@ import java.io.FileInputStream;
 @Slf4j
 @SpringBootTest(classes = OsDemoApplication.class)
 public class OsOssUtilsTest {
-    private String ossPath = "site/operator/";
+    private String ossPath = "popular/";
     private String localPath = "d:/upload";
 
     @Autowired

@@ -1,7 +1,6 @@
 package com.onestop.biz.wxmini.api;
 
 import com.onestop.biz.common.util.CommonUtils;
-import com.onestop.common.azure.storage.util.OsAzureStorageUtils;
 import com.onestop.wx.mini.util.OsWxMiniUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
@@ -17,8 +16,6 @@ public abstract class BaseApi {
     protected String uploadPath;
     @Autowired
     protected CommonUtils commonUtils;
-    @Autowired
-    protected OsAzureStorageUtils storageUtils;
     @Autowired
     protected OsWxMiniUtils miniUtils;
 }
