@@ -23,13 +23,13 @@
         <!--oss模块-->
         <dependency>
             <groupId>com.github.clarkstore</groupId>
-            <artifactId>os-alioss-spring-boot-starter</artifactId>
+            <artifactId>os-oss-spring-boot-starter</artifactId>
             <version>${onestop.version}</version>
         </dependency>
         <!--sms模块-->
         <dependency>
             <groupId>com.github.clarkstore</groupId>
-            <artifactId>os-alisms-spring-boot-starter</artifactId>
+            <artifactId>os-sms-spring-boot-starter</artifactId>
             <version>${onestop.version}</version>
         </dependency>
         <!--web模块-->
