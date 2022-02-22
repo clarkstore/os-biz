@@ -24,7 +24,7 @@ public class LimitDemoApi {
      */
     @GetMapping
     // 在限定的limitSec时间内可以访问的次数limitCount，超过即限流.
-    @OsAccessLimit(limitCount = 5, limitSec = 10, limitType = OsLimitTypeEnum.METHOD_NAME)
+    @OsAccessLimit(limitCount = 1, limitSec = 10, limitType = OsLimitTypeEnum.METHOD_NAME)
 //    @OsAccessLimit(limitCount = 1, limitSec = 10, limitType = OsLimitTypeEnum.IP)
     // CUSTOMER的类型下，相同key的接口相当于共享限流设定
 //    @OsAccessLimit(limitCount = 1, limitSec = 10, limitType = OsLimitTypeEnum.CUSTOMER, key = "test")
