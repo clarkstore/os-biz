@@ -15,7 +15,7 @@
         <spring-boot.version>2.6.3</spring-boot.version>
 
         <!--统一配置bom-->
-        <onestop.version>0.5.15</onestop.version>
+        <onestop.version>0.5.16</onestop.version>
         <maven-compiler.version>3.8.1</maven-compiler.version>
     </properties>
 

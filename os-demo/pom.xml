@@ -10,33 +10,10 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>os-demo</artifactId>
-    <packaging>jar</packaging>
-    <description>os-demo模块</description>
+    <packaging>pom</packaging>
 
-    <dependencies>
-        <!--公共模块-->
-        <dependency>
-            <groupId>com.github.clarkstore</groupId>
-            <artifactId>os-core-spring-boot-starter</artifactId>
-            <version>${onestop.version}</version>
-        </dependency>
-        <!--oss模块-->
-        <dependency>
-            <groupId>com.github.clarkstore</groupId>
-            <artifactId>os-oss-spring-boot-starter</artifactId>
-            <version>${onestop.version}</version>
-        </dependency>
-        <!--sms模块-->
-        <dependency>
-            <groupId>com.github.clarkstore</groupId>
-            <artifactId>os-sms-spring-boot-starter</artifactId>
-            <version>${onestop.version}</version>
-        </dependency>
-        <!--web模块-->
-        <dependency>
-            <groupId>com.github.clarkstore</groupId>
-            <artifactId>os-web-spring-boot-starter</artifactId>
-            <version>${onestop.version}</version>
-        </dependency>
-    </dependencies>
+    <modules>
+        <module>os-demo-common</module>
+        <module>os-demo-http</module>
+    </modules>
 </project>

@@ -3,7 +3,7 @@ package com.onestop.biz.mq.consumer.producer.api;
 import cn.hutool.core.collection.CollUtil;
 import cn.hutool.core.util.IdUtil;
 import com.onestop.common.core.util.Res;
-import com.onestop.starter.common.redis.util.OsRedisUtils;
+import com.onestop.common.redis.util.OsRedisUtils;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
