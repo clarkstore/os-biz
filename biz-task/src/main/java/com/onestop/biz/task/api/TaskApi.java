@@ -18,7 +18,7 @@
 
 package com.onestop.biz.task.api;
 
-import com.onestop.biz.task.service.impl.TaskServiceImpl;
+import com.onestop.biz.task.service.ITaskService;
 import com.onestop.common.core.util.Res;
 import com.onestop.common.task.util.OsTaskSchedulerUtils;
 import lombok.extern.slf4j.Slf4j;
@@ -42,7 +42,7 @@ public class TaskApi {
     private OsTaskSchedulerUtils schedulerUtils;
 
     @Autowired
-    private TaskServiceImpl taskService;
+    private ITaskService taskService;
 
     @GetMapping("/reset")
     public Res reset(String taskNo, String cron) {

@@ -14,11 +14,11 @@
     <description>定时任务模块</description>
 
     <dependencies>
-        <!--业务公共模块-->
+        <!--公共模块-->
         <dependency>
-            <groupId>${project.groupId}</groupId>
-            <artifactId>biz-common</artifactId>
-            <version>${project.version}</version>
+            <groupId>com.github.clarkstore</groupId>
+            <artifactId>os-core-spring-boot-starter</artifactId>
+            <version>${onestop.version}</version>
         </dependency>
         <!--定时任务-->
         <dependency>
