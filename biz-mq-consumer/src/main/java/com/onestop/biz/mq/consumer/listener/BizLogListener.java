@@ -1,7 +1,7 @@
 package com.onestop.biz.mq.consumer.listener;
 
 import com.onestop.biz.common.constant.MqQueueConsts;
-import com.onestop.biz.common.model.entity.BizLog;
+import com.onestop.common.log.model.entity.BizLog;
 import com.rabbitmq.client.Channel;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.core.Message;

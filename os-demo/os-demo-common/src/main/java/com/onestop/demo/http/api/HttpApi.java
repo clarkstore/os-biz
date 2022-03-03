@@ -14,7 +14,7 @@ import org.springframework.web.bind.annotation.RestController;
 @Slf4j
 @RestController
 @RequestMapping("/demo")
-public class DemoApi {
+public class HttpApi {
     @GetMapping("getDate")
     public Res getDate() {
         log.warn("------进入被调用方法------");

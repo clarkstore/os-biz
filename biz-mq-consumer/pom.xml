@@ -46,5 +46,11 @@
             <artifactId>biz-common</artifactId>
             <version>${project.version}</version>
         </dependency>
+        <!--日志模块-->
+        <dependency>
+            <groupId>com.github.clarkstore</groupId>
+            <artifactId>os-log-spring-boot-starter</artifactId>
+            <version>${onestop.version}</version>
+        </dependency>
     </dependencies>
 </project>

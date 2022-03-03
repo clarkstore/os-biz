@@ -1,8 +1,8 @@
 package com.onestop.biz.mq.consumer.producer.api;
 
 import com.onestop.biz.common.constant.MqQueueConsts;
-import com.onestop.biz.common.model.entity.BizLog;
 import com.onestop.common.core.util.Res;
+import com.onestop.common.log.model.entity.BizLog;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.amqp.rabbit.core.RabbitTemplate;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -29,7 +29,7 @@ public class TestApi {
             BizLog bizLog = BizLog.builder()
                     .id("id-" + i)
                     .name("name-" + i).build();
-//            rabbitTemplate.convertAndSend(MqQueueConsts.EXCHANGE_TKT_CREATE,"", bizLog);
+            rabbitTemplate.convertAndSend(MqQueueConsts.EXCHANGE_TKT_CREATE,"", bizLog);
             rabbitTemplate.convertAndSend(MqQueueConsts.QUEUE_BIZLOG, bizLog);
             log.warn("==========test QUEUE=========");
         }

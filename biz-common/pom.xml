@@ -21,12 +21,6 @@
             <artifactId>os-core-spring-boot-starter</artifactId>
             <version>${onestop.version}</version>
         </dependency>
-        <!--sms模块-->
-        <dependency>
-            <groupId>com.github.clarkstore</groupId>
-            <artifactId>os-sms-spring-boot-starter</artifactId>
-            <version>${onestop.version}</version>
-        </dependency>
         <!--web模块-->
         <dependency>
             <groupId>com.github.clarkstore</groupId>

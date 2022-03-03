@@ -20,27 +20,6 @@ public class BizConsts {
          */
         public static final int DELETED = 1;
     }
-    /**
-     * 接口日志常量
-     */
-    public static class BizLogConsts {
-        /**
-         * 处理成功
-         */
-        public static final String STATUS_SUCCESS = "1";
-        /**
-         * 处理失败
-         */
-        public static final String STATUS_FAIL = "0";
-        /**
-         * 业务类型1代表自动调用接口 类型
-         */
-        public static final String TYPE_AUTO = "1";
-        /**
-         * 业务类型2代表手动调用接口 类型
-         */
-        public static final String TYPE_MANUAL = "2";
-    }
 
     public static class Wxmini {
         /**

@@ -16,8 +16,14 @@
     <dependencies>
         <!--公共模块-->
         <dependency>
+            <groupId>com.onestop.biz</groupId>
+            <artifactId>biz-common</artifactId>
+            <version>1.0.0</version>
+        </dependency>
+        <!--日志模块-->
+        <dependency>
             <groupId>com.github.clarkstore</groupId>
-            <artifactId>os-core-spring-boot-starter</artifactId>
+            <artifactId>os-log-spring-boot-starter</artifactId>
             <version>${onestop.version}</version>
         </dependency>
         <!--oss模块-->
