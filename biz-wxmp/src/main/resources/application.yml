@@ -9,8 +9,6 @@ logging:
 
 os:
   wxmp:
-    # 开启配置
-    enabled: true
     appid:  #微信appid
     secret:  #微信Secret
     token:  #默认值

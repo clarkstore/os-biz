@@ -15,7 +15,7 @@
         <spring-boot.version>2.6.3</spring-boot.version>
 
         <!--统一配置bom-->
-        <onestop.version>0.6.2</onestop.version>
+        <onestop.version>0.6.5</onestop.version>
         <maven-compiler.version>3.8.1</maven-compiler.version>
     </properties>
 
@@ -26,10 +26,10 @@
             <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
         <!-- 引入Actuator监控依赖 -->
-        <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-actuator</artifactId>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.boot</groupId>-->
+<!--            <artifactId>spring-boot-starter-actuator</artifactId>-->
+<!--        </dependency>-->
         <!--添加lombok-->
         <dependency>
             <groupId>org.projectlombok</groupId>
@@ -105,9 +105,9 @@
     </build>
     <repositories>
         <!--阿里云代理-->
-<!--        <repository>-->
-<!--            <id>aliyun</id>-->
-<!--            <url>https://maven.aliyun.com/repository/public</url>-->
-<!--        </repository>-->
+        <repository>
+            <id>aliyun</id>
+            <url>https://maven.aliyun.com/repository/public</url>
+        </repository>
     </repositories>
 </project>

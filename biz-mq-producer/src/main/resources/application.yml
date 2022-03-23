@@ -9,13 +9,13 @@ logging:
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://mysql8.mysql.database.chinacloudapi.cn/bdticket?useSSL=false&useUnicode=true&characterEncoding=utf-8&requireSSL=false
-    username: osroot@mysql8
-    password: '1qaz@WSX3edc'
+    url: jdbc:mysql://mysql8.mysql.database.chinacloudapi.cn/abc?useSSL=false&useUnicode=true&characterEncoding=utf-8&requireSSL=false
+    username: osroot
+    password: ''
   # mq
   rabbitmq:
-    host: 39.105.9.40
-    port: 21901
+    host:
+    port:
     username: clark
     password: clark
     connection-timeout: 10000
@@ -29,14 +29,6 @@ spring:
         max-attempts: 3
         # 间隔一秒
         initial-interval: 1000
-
-  redis:
-    redisson:
-      file: classpath:redisson.yml
-os:
-  redis:
-    # 开启redis工具类
-    enabled: true
 
 mybatis-plus:
 #  typeAliasesPackage: com.onestop.**.model.entity

@@ -31,8 +31,6 @@ mybatis-plus:
 
 os:
   wxmini:
-    # 开启小程序配置
-    enabled: true
     #小程序
     appid:  #微信小程序的appid
     secret:  #微信小程序的Secret
@@ -45,13 +43,3 @@ os:
     subscribe:
       # 开启订阅消息配置
       enabled: true
-
-  azure:
-    storage:
-      # 开启
-      enabled: true
-      # 连接字符串
-      connectionString:
-  token:
-    # 开启
-    enabled: true

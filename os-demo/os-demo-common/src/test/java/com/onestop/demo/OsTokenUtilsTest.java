@@ -3,7 +3,7 @@ package com.onestop.demo;
 import cn.hutool.core.date.DateUtil;
 import cn.hutool.core.map.MapUtil;
 import cn.hutool.jwt.JWTPayload;
-import com.onestop.common.core.util.OsTokenUtils;
+import com.onestop.common.web.util.OsTokenUtils;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
