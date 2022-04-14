@@ -18,7 +18,8 @@
 7. 代码生成模块
 8. Demo模块
    1. 常用工具类Demo模块
-      - html模块邮件
+      - html模板邮件
+      - ali中文分词
       - ali存储服务
       - ali短信服务
       - token工具类
