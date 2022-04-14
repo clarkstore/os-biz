@@ -10,25 +10,15 @@ logging:
 spring:
   datasource:
     driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://${MYSQL_HOST:onduty-dev2.mysql.rds.aliyuncs.com}:${MYSQL_PORT:3306}/${MYSQL_DB:popular}?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2B8&nullCatalogMeansCurrent=true&allowPublicKeyRetrieval=true
-    username: ${MYSQL_USER:popular}
-    password: ${MYSQL_PWD:1qaz@WSX3edc}
+    url: jdbc:mysql://xxxx:3306/xxxx?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2B8&nullCatalogMeansCurrent=true&allowPublicKeyRetrieval=true
+    username: root
+    password:
 
 mybatis-plus:
   global-config:
     db-config:
       #逻辑删除配置（下面3个配置）
       logic-delete-field: deleted
-# Mybatis Mate 配置
-mybatis-mate:
-  cert:
-    grant: JinTianYiXue
-    license: KWXbhJf5g6PFp50uP3s9pxz13+VlQCj5XHaOGdoHQbUmUSQyXgLQ3Wbq30H8PElo3v/DTDVKN93cqqmwhOEFH/Jsy5R1vYUQ9mE+lrfVdpWiYJk85THWZSdQ7nBXhdX5euxrHPDhFh0ZSvsUe6KJ6QfIeZ04tivdsdWiltljzDOwJTBDD2Nuffwxjzakd0UnsdoZ9U9iPXneuXl0f7p96MylomPTvNr4CNhjgTbPmFypvw0BtpfjZTT6fiHb62o8o9NIgr4WO9uNfcxVvyB+7fpBpfO2QqQq/cNzJWtRFY32Yosl0wMK1OET8wAOejZ6oiwzQu4HdiwEO/7oewsahQ==
-  # 全局配置加密算法密钥
-  encryptor:
-    # 随机字符串作为密钥即可
-    password: 6D6171696E676875
-    algorithm: AES
 
 os:
   log:

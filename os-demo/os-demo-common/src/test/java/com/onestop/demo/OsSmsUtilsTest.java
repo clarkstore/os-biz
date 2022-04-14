@@ -18,8 +18,8 @@ public class OsSmsUtilsTest {
     @Test
     public void sendSms() {
         SendSmsRequest smsRequest = new SendSmsRequest();
-        smsRequest.setPhoneNumbers("13190138656");
-        smsRequest.setSignName("Blooming网");
+        smsRequest.setPhoneNumbers("xxxx");
+        smsRequest.setSignName("xxxx");
         smsRequest.setTemplateCode("SMS_204240296");
         smsRequest.setTemplateParam("{\"code\":\"4321\"}");
         utils.sendSms(smsRequest);
