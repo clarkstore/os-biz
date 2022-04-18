@@ -4,9 +4,16 @@ import com.onestop.ali.nlp.model.dto.OsNlpReq;
 import com.onestop.ali.nlp.model.dto.OsNlpRes;
 import com.onestop.ali.nlp.util.OsNlpUtils;
 import lombok.extern.slf4j.Slf4j;
+import org.ansj.domain.Result;
+import org.ansj.domain.Term;
+import org.ansj.library.DicLibrary;
+import org.ansj.splitWord.analysis.DicAnalysis;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
+
+import java.util.List;
+import java.util.stream.Collectors;
 
 /**
  * @author Clark
@@ -54,5 +61,20 @@ public class OsNlpUtilsTest {
         } catch (Exception e) {
             throw new RuntimeException(e);
         }
+    }
+
+    /**
+     * 第三方ansj
+     */
+    public void testAnsj() {
+        DicLibrary.insert(DicLibrary.DEFAULT, "都是", "n", 1000);
+        DicLibrary.insert(DicLibrary.DEFAULT, "国人", "n", 1000);
+        DicLibrary.insert(DicLibrary.DEFAULT, "中国人", "n", 1000);
+        DicLibrary.insert(DicLibrary.DEFAULT, "新中国", "n", 1000);
+        DicLibrary.insert(DicLibrary.DEFAULT, "新中国人", "n", 1000);
+        Result result = DicAnalysis.parse(TEXT);
+        List<String> nameList = result.getTerms().stream().map(Term::getName).collect(Collectors.toList());
+        log.error("==============第三方===============");
+        log.error(nameList.toString());
     }
 }
