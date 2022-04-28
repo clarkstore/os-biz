@@ -17,7 +17,7 @@ import java.io.File;
  */
 @Slf4j
 @RestController
-@RequestMapping("wxmini/api/qrcode")
+@RequestMapping("${os.service.apiPath}/qrcode")
 public class QrcodeApi extends BaseApi {
     /**
      * @param scene

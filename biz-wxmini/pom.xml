@@ -26,6 +26,12 @@
             <artifactId>os-wxmini-spring-boot-starter</artifactId>
             <version>${onestop.version}</version>
         </dependency>
+        <!--oss模块-->
+        <dependency>
+            <groupId>com.github.clarkstore</groupId>
+            <artifactId>os-oss-spring-boot-starter</artifactId>
+            <version>${onestop.version}</version>
+        </dependency>
     </dependencies>
     <build>
         <plugins>
