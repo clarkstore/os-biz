@@ -2,6 +2,7 @@ package com.onestop.demo.log.api;
 
 import cn.hutool.core.date.DateUtil;
 import com.onestop.common.core.util.Res;
+import com.onestop.common.log.annotation.OsLog;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
