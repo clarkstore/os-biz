@@ -1,19 +1,19 @@
-menu:
+reply:
   config:
     name: reply-config
 os:
   wxmp:
     reply:
       configs:
-        #菜单ID
-        - id: 1
-          #规则名
-          name: test
-          #回复类型 01：关注、02：关键字回复、03：客服消息
-          replyType: 02
-          #关键字
-          keyword: test
-          #消息类型：文本、图片、图文、视频、音频
-          msgType: text
+        #关键字
+        - keyword: subscribe
           #文本回复内容
-          replyText: test文本回复
+          replyText: 感谢您的关注！
+        #关键字
+#        - keyword: subscribe
+#          replyType: news
+#          article:
+#            title: 感谢您的关注
+#            description: 今天医疗简介
+#            picUrl: https://gimg2.baidu.com/image_search/src=http%3A%2F%2Fpic.soutu123.com%2Felement_origin_min_pic%2F16%2F07%2F07%2F15577e01396c9ef.jpg%21%2Ffw%2F700%2Fquality%2F90%2Funsharp%2Ftrue%2Fcompress%2Ftrue&refer=http%3A%2F%2Fpic.soutu123.com&app=2002&size=f9999,10000&q=a80&n=0&g=0n&fmt=auto?sec=1671353128&t=783cdcad2235fe9b7f13470f122aeb48
+#            url: https://www.163.com

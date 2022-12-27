@@ -27,10 +27,10 @@
             <version>${onestop.version}</version>
         </dependency>
         <!--weixin.java.common中引用了，不知道为什么没加载上，这里再配置下-->
-        <dependency>
-            <groupId>com.google.code.gson</groupId>
-            <artifactId>gson</artifactId>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.google.code.gson</groupId>-->
+<!--            <artifactId>gson</artifactId>-->
+<!--        </dependency>-->
     </dependencies>
     <build>
         <plugins>

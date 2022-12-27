@@ -25,17 +25,9 @@ public class QrcodeApi extends BaseApi {
      */
     @GetMapping("/create")
     public Res create(String scene) {
-        try {
-            //TODO 解析 sceno，拆分SN和自定义No
-            File wxQrcodeFile = this.createWxaCodeUnlimit(scene);
-            return Res.ok(wxQrcodeFile);
-        } catch (WxErrorException e) {
-            log.error(e.getMessage(), e);
-            return Res.failed(e.getError().getErrorMsg());
-        } catch (Exception e) {
-            log.error(e.getMessage(), e);
-            return Res.failed(e.getMessage());
-        }
+        //TODO 解析 sceno，拆分SN和自定义No
+        File wxQrcodeFile = this.createWxaCodeUnlimit(scene);
+        return Res.ok(wxQrcodeFile);
     }
 
     /**
@@ -45,16 +37,8 @@ public class QrcodeApi extends BaseApi {
      * @return
      * @throws WxErrorException
      */
-    private File createWxaCodeUnlimit(String scene) throws WxErrorException {
+    private File createWxaCodeUnlimit(String scene) {
         String page = null;
-
-        try {
-            return super.miniUtils.createWxaCodeUnlimit(scene, page, uploadPath);
-        } catch (WxErrorException e) {
-            log.error("---------------createWxaCodeUnlimit----------------");
-            log.error("scene : " + scene);
-            log.error(e.getError().toString());
-            throw e;
-        }
+        return super.miniUtils.createWxaCodeUnlimit(scene, page, uploadPath);
     }
 }

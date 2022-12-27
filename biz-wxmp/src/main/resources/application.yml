@@ -6,16 +6,37 @@ logging:
     org.springframework: INFO
     me.chanjar.weixin: INFO
     com.onestop: DEBUG
+# 数据源
+spring:
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://xxx:3306/xxx?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2B8&nullCatalogMeansCurrent=true&allowPublicKeyRetrieval=true
+    username: xxxx
+    password: xxxx
 
+mybatis-plus:
+  global-config:
+    db-config:
+      #逻辑删除配置（下面3个配置）
+      logic-delete-field: deleted
 os:
+  # api路由前缀
+  service:
+    domain: http://wx.xxxx.com
+    apiPath: wxmp/api
+    # api完整路径
+    apiFullPath: ${os.service.domain}/${os.service.apiPath}
+    # 前端路径
+    uiFullPath: ${os.service.domain}/wxui
   wxmp:
     appid:  #微信appid
     secret:  #微信Secret
-    token:  #默认值
+    token: onestop
     aesKey:  #默认值
-    uiPath:
+    txtPath: d:/txt/
     menu:
       enabled: true
-    # 开启关键字回复配置
     reply:
+      enabled: true
+    subscribe:
       enabled: true
