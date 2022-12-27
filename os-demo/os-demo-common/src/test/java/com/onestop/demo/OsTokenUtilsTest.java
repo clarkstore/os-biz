@@ -22,8 +22,8 @@ public class OsTokenUtilsTest {
 
     @Test
     public void token() {
-        // 设置过期时间：秒
-        Date date = DateUtil.offsetMinute(DateUtil.date(), 1);
+        // 设置过期时间：1秒
+        Date date = DateUtil.offsetSecond(DateUtil.date(), 1);
         Map<String, Object> payload = MapUtil.newHashMap();
         payload.put(JWTPayload.EXPIRES_AT, date);
         String token = utils.sign(payload);

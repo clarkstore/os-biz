@@ -5,3 +5,10 @@ logging:
   level:
     org.springframework: INFO
     com.onestop: INFO
+os:
+  aes:
+    # 私钥
+    secret: 0123456789ABCDEF
+  token:
+    # 私钥
+    secret: 0123456789ABCDEF

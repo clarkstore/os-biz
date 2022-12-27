@@ -1,4 +1,4 @@
-package com.onestop.biz.common.interceptor;
+package com.onestop.demo.interceptor;
 
 import com.onestop.common.web.interceptor.OsTokenInterceptor;
 import jakarta.servlet.http.HttpServletRequest;
