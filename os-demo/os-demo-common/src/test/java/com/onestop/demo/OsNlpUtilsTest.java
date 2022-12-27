@@ -66,6 +66,7 @@ public class OsNlpUtilsTest {
     /**
      * 第三方ansj
      */
+    @Test
     public void testAnsj() {
         DicLibrary.insert(DicLibrary.DEFAULT, "都是", "n", 1000);
         DicLibrary.insert(DicLibrary.DEFAULT, "国人", "n", 1000);

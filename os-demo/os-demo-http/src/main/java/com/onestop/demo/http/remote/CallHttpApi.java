@@ -1,4 +1,4 @@
-package com.onestop.biz.http.remote;
+package com.onestop.demo.http.remote;
 
 import com.onestop.common.core.util.Res;
 

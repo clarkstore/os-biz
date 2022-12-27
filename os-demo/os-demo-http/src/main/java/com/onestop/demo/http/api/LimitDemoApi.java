@@ -1,4 +1,4 @@
-package com.onestop.biz.http.api;
+package com.onestop.demo.http.api;
 
 import com.onestop.common.core.util.Res;
 import com.onestop.common.http.annotation.OsAccessLimit;

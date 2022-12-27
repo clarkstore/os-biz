@@ -5,22 +5,3 @@ logging:
   level:
     org.springframework: INFO
     com.onestop: INFO
-
-# 数据源
-spring:
-  datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://xxxx:3306/xxxx?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2B8&nullCatalogMeansCurrent=true&allowPublicKeyRetrieval=true
-    username: root
-    password:
-
-mybatis-plus:
-  global-config:
-    db-config:
-      #逻辑删除配置（下面3个配置）
-      logic-delete-field: deleted
-
-os:
-  log:
-#    可以重构自定义拦截器
-#    aspect: com.onestop.demo.log.aspect.MyBizLogAspect

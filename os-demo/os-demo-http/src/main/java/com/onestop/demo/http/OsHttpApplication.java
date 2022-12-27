@@ -1,4 +1,4 @@
-package com.onestop.biz.http;
+package com.onestop.demo.http;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

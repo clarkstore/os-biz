@@ -28,15 +28,15 @@
             <version>${onestop.version}</version>
         </dependency>
         <!--mybatis模块-->
-        <dependency>
-            <groupId>com.github.clarkstore</groupId>
-            <artifactId>os-mybatis-spring-boot-starter</artifactId>
-            <version>${onestop.version}</version>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.github.clarkstore</groupId>-->
+<!--            <artifactId>os-mybatis-spring-boot-starter</artifactId>-->
+<!--            <version>${onestop.version}</version>-->
+<!--        </dependency>-->
         <!--alibaba连接池-->
-        <dependency>
-            <groupId>com.alibaba</groupId>
-            <artifactId>druid-spring-boot-starter</artifactId>
-        </dependency>
+<!--        <dependency>-->
+<!--            <groupId>com.alibaba</groupId>-->
+<!--            <artifactId>druid-spring-boot-starter</artifactId>-->
+<!--        </dependency>-->
     </dependencies>
 </project>

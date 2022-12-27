@@ -16,11 +16,11 @@ public class OsSmsUtilsTest {
     private OsSmsUtils utils;
 
     @Test
-    public void sendSms() {
+    public void sendSms() throws Exception {
         SendSmsRequest smsRequest = new SendSmsRequest();
         smsRequest.setPhoneNumbers("xxxx");
         smsRequest.setSignName("xxxx");
-        smsRequest.setTemplateCode("SMS_204240296");
+        smsRequest.setTemplateCode("SMS_222570015");
         smsRequest.setTemplateParam("{\"code\":\"4321\"}");
         utils.sendSms(smsRequest);
     }

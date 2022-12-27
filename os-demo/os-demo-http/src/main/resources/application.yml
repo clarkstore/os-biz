@@ -5,23 +5,36 @@ logging:
   level:
     org.springframework: INFO
     com.onestop: debug
+# 数据源
 spring:
-  redis:
-    database: 3
-    # Redis服务器地址
-    host: xxxx
-    # Redis服务器连接端口
-    port: 6379
-    # Redis服务器连接密码（默认为空）
+  datasource:
+    driver-class-name: com.mysql.cj.jdbc.Driver
+    url: jdbc:mysql://xxxx:3306/xxxx?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2B8&nullCatalogMeansCurrent=true&allowPublicKeyRetrieval=true
+    username: root
     password:
-    # 连接超时时间（毫秒）
-    timeout: 5000
-    lettuce:
-      shutdown-timeout: 2000
+
+# 采用默认值配置，下列不必设置
+mybatis-plus:
+  #  typeAliasesPackage: com.onestop.**.model.entity
+  #  #默认值：classpath*:/mapper/**/*.xml
+  #  mapper-locations: classpath*:/mapper/**/*.xml
+  #  configuration:
+  #    #驼峰下划线转换：默认值：true
+  #    map-underscore-to-camel-case: true
+  global-config:
+    db-config:
+      #逻辑删除配置（下面3个配置）
+      logic-delete-field: deleted
+#      #逻辑删除：正常默认值：0，删除默认值：1
+#      logic-delete-value: 1
+#      logic-not-delete-value: 0
+#      #表名是否使用下划线命名，默认数据库表使用下划线命名:true
+#      table-underline: true
+
 os:
-  # 服务端api地址
-  service:
-    apiBaseUrl: http://localhost
   redis:
     # 开启redis工具类、不配置spring.redis为采用默认值，也可自定义配置
     enabled: true
+  log:
+#    可以重构自定义拦截器
+#    aspect: com.onestop.demo.log.aspect.MyBizLogAspect
