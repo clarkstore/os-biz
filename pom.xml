@@ -10,12 +10,12 @@
     <version>1.0.0</version>
 
     <properties>
-        <java.version>8</java.version>
+        <java.version>17</java.version>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
-        <spring-boot.version>2.7.5</spring-boot.version>
+        <spring-boot.version>3.0.0</spring-boot.version>
 
         <!--统一配置bom-->
-        <onestop.version>0.6.29</onestop.version>
+        <onestop.version>0.17.0</onestop.version>
         <maven-compiler-plugin.version>3.10.1</maven-compiler-plugin.version>
     </properties>
 
@@ -31,22 +31,20 @@
             <groupId>org.springframework.boot</groupId>
             <artifactId>spring-boot-starter-test</artifactId>
             <scope>test</scope>
-            <exclusions>
-                <exclusion>
-                    <groupId>org.junit.vintage</groupId>
-                    <artifactId>junit-vintage-engine</artifactId>
-                </exclusion>
-            </exclusions>
+<!--            <exclusions>-->
+<!--                <exclusion>-->
+<!--                    <groupId>org.junit.vintage</groupId>-->
+<!--                    <artifactId>junit-vintage-engine</artifactId>-->
+<!--                </exclusion>-->
+<!--            </exclusions>-->
         </dependency>
     </dependencies>
 
     <modules>
         <module>biz-common</module>
-        <module>biz-mq-consumer</module>
-        <module>biz-mq-producer</module>
+        <module>biz-task</module>
         <module>biz-wxmini</module>
         <module>biz-wxmp</module>
-        <module>biz-task</module>
         <module>os-codegen</module>
         <module>os-demo</module>
     </modules>

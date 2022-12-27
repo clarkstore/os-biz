@@ -1,10 +1,9 @@
 package com.onestop.biz.common.interceptor;
 
 import com.onestop.common.web.interceptor.OsTokenInterceptor;
+import jakarta.servlet.http.HttpServletRequest;
+import jakarta.servlet.http.HttpServletResponse;
 import lombok.extern.slf4j.Slf4j;
-
-import javax.servlet.http.HttpServletRequest;
-import javax.servlet.http.HttpServletResponse;
 
 /**
  * 自定义Token拦截器
