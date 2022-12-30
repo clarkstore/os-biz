@@ -8,6 +8,7 @@
 ## OneStop工具平台：业务Demo项目
 #### 本项目基于OneStop工具平台的业务Demo项目，针对OneStop的不同模块提供使用的Demo
 #### 温馨提示：使用前请确认业务场景与技术实现是否匹配。
+#### 注：基于JDK17、SpringBoot3.0.x
 
 1. 业务公共模块
 2. 消费者Demo模块
