@@ -16,7 +16,7 @@ import org.springframework.web.bind.annotation.RestController;
 @Slf4j
 @RestController
 @RequestMapping("/limit")
-public class LimitDemoApi {
+public class LimitApi {
 
     /**
      * 访问限流

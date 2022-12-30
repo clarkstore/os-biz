@@ -15,5 +15,6 @@
     <modules>
         <module>os-demo-common</module>
         <module>os-demo-http</module>
+        <module>os-demo-log</module>
     </modules>
 </project>
