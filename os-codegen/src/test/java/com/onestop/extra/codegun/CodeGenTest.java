@@ -1,11 +1,11 @@
 package com.onestop.extra.codegun;
 
-import com.onestop.extra.codegun.util.CodeGenUtils;
+import com.onestop.extra.codegun.util.OsCodeGenUtils;
+import jakarta.annotation.Resource;
 import lombok.extern.slf4j.Slf4j;
 import org.junit.jupiter.api.Test;
 import org.springframework.boot.test.context.SpringBootTest;
 
-import javax.annotation.Resource;
 
 /**
  * @author Clark
@@ -15,7 +15,7 @@ import javax.annotation.Resource;
 @SpringBootTest(classes = CodegunApplication.class)
 public class CodeGenTest {
     @Resource
-    private CodeGenUtils codeGenUtils;
+    private OsCodeGenUtils codeGenUtils;
 
     @Test
     void codeGen() {
