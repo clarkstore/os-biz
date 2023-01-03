@@ -14,10 +14,14 @@
 
     <dependencies>
         <!--web模块-->
+<!--        <dependency>-->
+<!--            <groupId>com.github.clarkstore</groupId>-->
+<!--            <artifactId>os-web-spring-boot-starter</artifactId>-->
+<!--            <version>${onestop.version}</version>-->
+<!--        </dependency>-->
         <dependency>
-            <groupId>com.github.clarkstore</groupId>
-            <artifactId>os-web-spring-boot-starter</artifactId>
-            <version>${onestop.version}</version>
+            <groupId>org.springframework.boot</groupId>
+            <artifactId>spring-boot-starter-web</artifactId>
         </dependency>
         <!-- For webclient support -->
         <dependency>
@@ -37,6 +41,22 @@
                         </goals>
                     </execution>
                 </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-compiler-plugin</artifactId>
+                <version>${maven-compiler-plugin.version}</version>
+                <configuration>
+                    <target>${java.version}</target>
+                    <source>${java.version}</source>
+                    <encoding>${project.build.sourceEncoding}</encoding>
+                    <skip>true</skip>
+                    <!--webclient接口构建-->
+                    <!--Compile the affected code with '-parameters' instead or avoid its introspection-->
+                    <compilerArgs>
+                        <arg>-parameters</arg>
+                    </compilerArgs>
+                </configuration>
             </plugin>
         </plugins>
     </build>

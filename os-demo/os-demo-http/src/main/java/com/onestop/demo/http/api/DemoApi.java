@@ -12,18 +12,20 @@ import org.springframework.web.bind.annotation.*;
  */
 @Slf4j
 @RestController
-@RequestMapping("/web")
-public class WebApi {
+@RequestMapping("/demo")
+public class DemoApi {
 
     @GetMapping("/get/{id}")
     public Res get(@PathVariable String id) {
         log.warn("================get==================");
-        return Res.ok("OK");
+        log.warn("id=" + id);
+        return Res.ok(id);
     }
 
     @PostMapping("/post")
     public Res post(@RequestBody ReqDto dto) {
         log.warn("================post==================");
+        log.warn("dto=" + dto.toString());
         return Res.ok(dto.toString());
     }
 }
