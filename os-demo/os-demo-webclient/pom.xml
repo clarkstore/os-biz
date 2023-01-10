@@ -13,16 +13,16 @@
     <packaging>jar</packaging>
 
     <dependencies>
-        <!--web模块-->
-<!--        <dependency>-->
-<!--            <groupId>com.github.clarkstore</groupId>-->
-<!--            <artifactId>os-web-spring-boot-starter</artifactId>-->
-<!--            <version>${onestop.version}</version>-->
-<!--        </dependency>-->
+        <!--公共模块-->
         <dependency>
-            <groupId>org.springframework.boot</groupId>
-            <artifactId>spring-boot-starter-web</artifactId>
+            <groupId>com.github.clarkstore</groupId>
+            <artifactId>os-core-spring-boot-starter</artifactId>
+            <version>${onestop.version}</version>
         </dependency>
+<!--        <dependency>-->
+<!--            <groupId>org.springframework.boot</groupId>-->
+<!--            <artifactId>spring-boot-starter-web</artifactId>-->
+<!--        </dependency>-->
         <!-- For webclient support -->
         <dependency>
             <groupId>org.springframework.boot</groupId>

@@ -1,25 +1,12 @@
 package com.onestop.demo.webclient.dto;
 
 import lombok.Builder;
-import lombok.Getter;
-import lombok.Setter;
-import lombok.ToString;
-import lombok.experimental.Tolerate;
 
 /**
- * ReqDTO
- * @author Clark
- * @version 2021/12/28
+ * ReqDto
+ * @param id
+ * @param name
  */
 @Builder
-@Getter
-@Setter
-@ToString
-public class ReqDto {
-    @Tolerate
-    public ReqDto() {
-    }
-
-    private String id;
-    private String name;
+public record ReqDto (String id, String name) {
 }

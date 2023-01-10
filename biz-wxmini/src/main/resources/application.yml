@@ -6,20 +6,8 @@ logging:
     org.springframework: info
     cn.binarywang: info
     com.onestop: debug
-# 数据源
-spring:
-  datasource:
-    driver-class-name: com.mysql.cj.jdbc.Driver
-    url: jdbc:mysql://mysql.rds.aliyuncs.com:3306/test?characterEncoding=utf8&zeroDateTimeBehavior=convertToNull&useSSL=false&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=GMT%2B8&nullCatalogMeansCurrent=true&allowPublicKeyRetrieval=true
-    username: root
-    password:
-
-mybatis-plus:
-  global-config:
-    db-config:
-      #逻辑删除配置（下面3个配置）
-      logic-delete-field: deleted
-
+  pattern:
+    console: '%date{"yyyy/MM/dd HH:mm:ss,SSS", UTC} [%p] [%t] %M\(%F:%L\) - %msg%n'
 os:
   wxmini:
     #小程序

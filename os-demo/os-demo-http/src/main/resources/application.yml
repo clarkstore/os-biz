@@ -5,6 +5,8 @@ logging:
   level:
     org.springframework: INFO
     com.onestop: debug
+  pattern:
+    console: '%date{"yyyy/MM/dd HH:mm:ss,SSS", UTC} [%p] [%t] %M\(%F:%L\) - %msg%n'
 spring:
   data:
     redis:
