@@ -1,4 +1,4 @@
-package com.onestop.demo.webclient.api;
+package com.onestop.demo.webflux.api;
 
 import com.onestop.common.core.util.Res;
 import org.springframework.web.service.annotation.GetExchange;

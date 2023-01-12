@@ -1,11 +1,11 @@
-package com.onestop.demo.webclient.config;
+package com.onestop.demo.webflux.config;
 
 /**
  * @author Clark
  * @version 2023/1/5
  */
 
-import com.onestop.demo.webclient.handler.BizHandler;
+import com.onestop.demo.webflux.handler.BizHandler;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
 import org.springframework.context.annotation.Configuration;

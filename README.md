@@ -18,17 +18,25 @@
 6. 微信服务号Demo模块
 7. 代码生成模块
 8. Demo模块
-   1. 常用工具类Demo模块
+   1. 常用工具类Demo:os-demo-common
       - html模板邮件
       - ali中文分词
       - ali存储服务
       - ali短信服务
       - token工具类
-   2. http接口Demo模块
-      - 调用第三方服务
+   2. http接口限流Demo:os-demo-http
       - 服务接口限流
+   3. HttpExchange Demo:os-demo-httpexchange
+      - 使用spring6.0声明式内置http客户端调用外部服务
+      - 声明式内置http客户端对外部服务的异步封装
+   4. 接口调用日志Demo:os-demo-log
       - 业务接口日志记录(开启异步)
-10. docker部署文件
+      - 配置数据库，初始化日志表bizlog
+      - 接口通过日志注解进行调用记录
+   5. webflux响应式服务 Demo:os-demo-webflux
+      - webflux响应式非阻塞服务示例
+      - 使用spring6.0声明式内置http客户端调用外部服务
+9. docker部署文件
 
 ---
 

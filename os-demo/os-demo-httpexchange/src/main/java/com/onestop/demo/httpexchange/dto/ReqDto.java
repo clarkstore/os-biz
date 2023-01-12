@@ -1,4 +1,4 @@
-package com.onestop.demo.webclient.dto;
+package com.onestop.demo.httpexchange.dto;
 
 import lombok.Builder;
 
