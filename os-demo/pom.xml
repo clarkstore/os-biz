@@ -15,8 +15,8 @@
     <modules>
         <module>os-demo-common</module>
         <module>os-demo-http</module>
-        <module>os-demo-log</module>
         <module>os-demo-httpexchange</module>
+        <module>os-demo-log</module>
         <module>os-demo-webflux</module>
     </modules>
 </project>

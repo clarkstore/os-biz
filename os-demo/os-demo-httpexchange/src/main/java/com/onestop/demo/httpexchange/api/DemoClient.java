@@ -38,6 +38,7 @@ public interface DemoClient {
 
     /**
      * 异步接口
+     * 仅为测试返回异步集合结果，通常采用getList方式返回结果
      *
      * @return
      */
