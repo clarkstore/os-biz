@@ -42,7 +42,7 @@
 
     <modules>
         <module>biz-common</module>
-        <module>biz-mp</module>
+<!--        <module>biz-mp</module>-->
         <module>biz-task</module>
         <module>biz-wxmini</module>
         <module>biz-wxmp</module>
