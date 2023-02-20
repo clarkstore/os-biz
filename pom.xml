@@ -47,6 +47,7 @@
         <module>biz-wxmp</module>
         <module>os-codegen</module>
         <module>os-demo</module>
+        <module>biz-mp</module>
     </modules>
 
     <dependencyManagement>
