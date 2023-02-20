@@ -34,6 +34,10 @@
       - 配置数据库，初始化日志表bizlog
       - 接口通过日志注解进行调用记录
    5. native image生成exe示例
+      - 安装graalvm
+      - 配置lib/INCLUDE/PATH
+      - 配置JAVA_HOME/MAVEN_HOME：graalvm-java
+      - 测试http://localhost
    6. webflux响应式服务 Demo:os-demo-webflux
       - webflux响应式非阻塞服务示例
       - 使用spring6.0声明式内置http客户端调用外部服务
