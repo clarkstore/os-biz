@@ -16,7 +16,7 @@
         <!--公共模块-->
         <dependency>
             <groupId>com.github.clarkstore</groupId>
-            <artifactId>os-core-spring-boot-starter</artifactId>
+            <artifactId>os-common-core</artifactId>
             <version>${onestop.version}</version>
         </dependency>
         <!--web模块 与@EnableWebFlux注解不能同存-->

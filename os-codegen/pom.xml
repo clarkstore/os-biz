@@ -35,12 +35,6 @@
         <!--公共模块-->
         <dependency>
             <groupId>com.github.clarkstore</groupId>
-            <artifactId>os-core-spring-boot-starter</artifactId>
-            <version>${onestop.version}</version>
-        </dependency>
-        <!--公共模块-->
-        <dependency>
-            <groupId>com.github.clarkstore</groupId>
             <artifactId>os-mybatis-spring-boot-starter</artifactId>
             <version>${onestop.version}</version>
         </dependency>
