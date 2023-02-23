@@ -43,6 +43,12 @@
             <artifactId>os-sms-spring-boot-starter</artifactId>
             <version>${onestop.version}</version>
         </dependency>
+        <!--toolkit需要使用Redis-->
+        <dependency>
+            <groupId>com.github.clarkstore</groupId>
+            <artifactId>os-redis-spring-boot-starter</artifactId>
+            <version>${onestop.version}</version>
+        </dependency>
         <!--toolkit模块-->
         <dependency>
             <groupId>com.github.clarkstore</groupId>
