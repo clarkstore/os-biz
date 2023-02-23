@@ -19,11 +19,11 @@
 7. 代码生成模块
 8. Demo模块
    1. 常用工具类Demo:os-demo-common
-      - html模板邮件
       - ali中文分词
       - ali存储服务
       - ali短信服务
       - token工具类
+      - toolkit【模板邮件、流水号】
    2. http接口限流Demo:os-demo-http
       - 服务接口限流
    3. HttpExchange Demo:os-demo-httpexchange
