@@ -5,8 +5,12 @@ import cn.hutool.core.map.MapUtil;
 import cn.hutool.jwt.JWTPayload;
 import com.onestop.common.core.util.Res;
 import com.onestop.common.web.annotation.OsAuthTokenAnnotation;
+import com.onestop.common.web.annotation.OsDesensitizationAnnotation;
 import com.onestop.common.web.annotation.OsResAesAnnotation;
+import com.onestop.common.web.constant.OsDesensitizationTypeEnum;
 import com.onestop.common.web.util.OsTokenUtils;
+import lombok.Getter;
+import lombok.Setter;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -17,7 +21,7 @@ import java.util.Date;
 import java.util.Map;
 
 /**
- * 服务限流demo
+ * Web模块demo
  * @author Clark
  * @version 2022-2-22
  */
@@ -63,5 +67,29 @@ public class WebApi {
         String token = osTokenUtils.sign(payload);
         log.warn("token= " + token);
         return Res.ok(token);
+    }
+
+    /**
+     * 数据脱敏
+     * @return
+     */
+    @GetMapping("getDesensitizationInfo")
+    public Res getDesensitizationInfo() {
+        return Res.ok(new DesensitizationDto());
+    }
+
+    @Getter
+    @Setter
+    public class DesensitizationDto {
+        @OsDesensitizationAnnotation(type = OsDesensitizationTypeEnum.CUSTOMER, prefixNoMaskLen = 1, suffixNoMaskLen = 5)
+        private String id = "1234567890";
+        @OsDesensitizationAnnotation(type = OsDesensitizationTypeEnum.CHINESE_NAME)
+        private String name = "张三三";
+        @OsDesensitizationAnnotation(type = OsDesensitizationTypeEnum.ID_CARD)
+        private String idcard = "210123200001011019";
+        @OsDesensitizationAnnotation(type = OsDesensitizationTypeEnum.MOBILE_PHONE)
+        private String phone = "13912345678";
+        @OsDesensitizationAnnotation(type = OsDesensitizationTypeEnum.EMAIL)
+        private String email = "abc@126.com";
     }
 }

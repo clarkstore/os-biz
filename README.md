@@ -19,6 +19,7 @@
 7. 代码生成模块
 8. Demo模块
    1. 常用工具类Demo:os-demo-common
+      - 响答加密返回、token验证、数据脱敏
       - ali中文分词
       - ali存储服务
       - ali短信服务
