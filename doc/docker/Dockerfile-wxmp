@@ -1,5 +1,4 @@
-#基础镜像：anapsix，标签用8u202
-FROM anapsix/alpine-java:8_server-jre_unlimited
+FROM openjdk:20-ea-17-oracle
 #当前镜像的维护者和联系方式
 MAINTAINER Clark changch@neusoft.com
 #将打包好的spring程序拷贝到容器中的指定位置
