@@ -2,6 +2,7 @@ package com.onestop.demo.http.api;
 
 import com.onestop.common.core.util.Res;
 import com.onestop.common.http.annotation.OsAccessLimit;
+import com.onestop.common.http.annotation.OsRepeatSubmit;
 import com.onestop.common.http.constant.OsLimitTypeEnum;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.web.bind.annotation.GetMapping;
@@ -15,8 +16,8 @@ import org.springframework.web.bind.annotation.RestController;
  */
 @Slf4j
 @RestController
-@RequestMapping("/limit")
-public class LimitApi {
+@RequestMapping("/http")
+public class HttpApi {
 
     /**
      * 访问限流
@@ -33,10 +34,17 @@ public class LimitApi {
         return Res.ok("访问成功");
     }
 
-    @GetMapping("test")
+    @GetMapping("limit")
     @OsAccessLimit(limitCount = 1, limitSec = 10, limitType = OsLimitTypeEnum.CUSTOMER, key = "test")
-    public Res test() {
+    public Res limit() {
         log.warn("================test==================");
+        return Res.ok("访问成功");
+    }
+
+    @GetMapping("test")
+    @OsRepeatSubmit(expireTime = 5)
+    public Res repeatSubmit() {
+        log.warn("================repeatSubmit==================");
         return Res.ok("访问成功");
     }
 }
