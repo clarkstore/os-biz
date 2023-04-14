@@ -6,12 +6,20 @@ logging:
 spring:
   data:
     redis:
+      #生产4
+      database: 2
       # Redis服务器地址
-      host: xxxx
+#      host: onduty-dev.redis.rds.aliyuncs.com
+      host: 127.0.0.1
       # Redis服务器连接端口
       port: 6379
       # Redis服务器连接密码（默认为空）
+#      password: dev:1qaz@WSX3edc
       password:
+      # 连接超时时间（毫秒）
+      timeout: 5000
+      lettuce:
+        shutdown-timeout: 2000
 os:
 #  mail:
 #    # 邮件服务器的SMTP地址 默认：126

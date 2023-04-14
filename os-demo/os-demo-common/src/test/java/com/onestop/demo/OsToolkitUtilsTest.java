@@ -34,7 +34,6 @@ public class OsToolkitUtilsTest {
     @Test
     public void getSeqNo() {
         String seqNo = this.seqUtils.getSeqNo();
-        System.out.println("------------------");
         System.out.println("无业务标识: " + seqNo);
         seqNo = this.seqUtils.getSeqNo("AB");
         System.out.println("有业务标识: " + seqNo);

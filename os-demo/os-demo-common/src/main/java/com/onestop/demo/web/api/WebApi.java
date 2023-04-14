@@ -4,9 +4,9 @@ import cn.hutool.core.date.DateUtil;
 import cn.hutool.core.map.MapUtil;
 import cn.hutool.jwt.JWTPayload;
 import com.onestop.common.core.util.Res;
-import com.onestop.common.web.annotation.OsAuthTokenAnnotation;
-import com.onestop.common.web.annotation.OsDesensitizationAnnotation;
-import com.onestop.common.web.annotation.OsResAesAnnotation;
+import com.onestop.common.web.annotation.OsAuthToken;
+import com.onestop.common.web.annotation.OsDesensitization;
+import com.onestop.common.web.annotation.OsResAes;
 import com.onestop.common.web.constant.OsDesensitizationTypeEnum;
 import com.onestop.common.web.util.OsTokenUtils;
 import lombok.Getter;
@@ -37,7 +37,7 @@ public class WebApi {
      * @return
      */
     @GetMapping("aes")
-    @OsResAesAnnotation
+    @OsResAes
     public Res aes() {
         log.warn("================Aes==================");
         return Res.ok("访问成功");
@@ -48,7 +48,7 @@ public class WebApi {
      * @return
      */
     @GetMapping("authToken")
-    @OsAuthTokenAnnotation
+    @OsAuthToken
     public Res authToken() {
         log.warn("================authToken==================");
         return Res.ok("验证成功");
@@ -81,15 +81,15 @@ public class WebApi {
     @Getter
     @Setter
     public class DesensitizationDto {
-        @OsDesensitizationAnnotation(type = OsDesensitizationTypeEnum.CUSTOMER, prefixNoMaskLen = 1, suffixNoMaskLen = 5)
+        @OsDesensitization(type = OsDesensitizationTypeEnum.CUSTOMER, prefixNoMaskLen = 1, suffixNoMaskLen = 5)
         private String id = "1234567890";
-        @OsDesensitizationAnnotation(type = OsDesensitizationTypeEnum.CHINESE_NAME)
+        @OsDesensitization(type = OsDesensitizationTypeEnum.CHINESE_NAME)
         private String name = "张三三";
-        @OsDesensitizationAnnotation(type = OsDesensitizationTypeEnum.ID_CARD)
+        @OsDesensitization(type = OsDesensitizationTypeEnum.ID_CARD)
         private String idcard = "210123200001011019";
-        @OsDesensitizationAnnotation(type = OsDesensitizationTypeEnum.MOBILE_PHONE)
+        @OsDesensitization(type = OsDesensitizationTypeEnum.MOBILE_PHONE)
         private String phone = "13912345678";
-        @OsDesensitizationAnnotation(type = OsDesensitizationTypeEnum.EMAIL)
+        @OsDesensitization(type = OsDesensitizationTypeEnum.EMAIL)
         private String email = "abc@126.com";
     }
 }
